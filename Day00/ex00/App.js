@@ -1,10 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Text, View, Image, Button } from 'react-native';
+import { useFonts } from 'expo-font';
+
 import { styles } from './assets/styleCss';
 
 
 export default function App() {
+  const [loaded] = useFonts({
+    poppins: require('./assets/poppins/Poppins-Regular.otf'),
+  });
+
+  if (!loaded) {
+    return null;
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.blockGris}>
@@ -26,7 +36,6 @@ export default function App() {
           <Text style={styles.boutonDroit}>
             <Image style={styles.imgPanier} source={require("./assets/panier.png")} />
             <Text style={styles.textBuy}>BUY</Text>
-            <Text style={styles.test}> </Text>
           </Text>
         </View>
         <View  style={styles.blockText}>
@@ -43,8 +52,6 @@ export default function App() {
           <Text style={ styles.textFin }> Release date: February 2017</Text>
           <Text style={ styles.textFin }> Colorway: CORE BLACK/CORE BLACK/RED</Text>
         </View>
-
-
       </View>
       <StatusBar style="auto" />
     </View>
