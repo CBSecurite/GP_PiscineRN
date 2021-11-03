@@ -1,5 +1,4 @@
 import { StyleSheet } from "react-native";
-import fontawesome from 'fontawesome';
 
 export const styles = StyleSheet.create({
   container: {
