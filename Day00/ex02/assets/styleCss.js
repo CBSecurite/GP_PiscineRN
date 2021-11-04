@@ -1,0 +1,57 @@
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#ffffff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    height: '100%',
+  },
+  blockForm: {
+    width: '351px',
+    height: '497px',
+    boxShadow: '0px 18px 30px 6px rgba(0, 0, 0, 0.1)',
+    borderRadius: '11px',
+    alignItems: 'center',
+  },
+  imgLogo: {
+    width: '116px',
+    height: '110px',
+    marginTop: '44px',
+    marginBottom: '52px',
+  },
+  input: {
+    width: '294px',
+    height: '71px',
+    border: '2px solid #E5E5E5',
+    boxSizing: 'border-box',
+    borderRadius: '14px',
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    fontWeight: '200',
+    fontSize: '26px',
+    lineHeight: '0%',
+    color: '#000000',
+    padding: '23px',
+    paddingRight: '40px',
+    marginBottom: '23px',
+  },
+  button: {
+    width: '294px',
+    height: '71px',
+    alignItems: 'center',
+    justifyContent: 'center',
+    boxSizing: 'border-box',
+    borderRadius: '14px',
+  },
+  buttonText: {
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    fontWeight: '200',
+    fontSize: '26px',
+    lineHeight: '0%',
+    color: '#ffffff',
+  },
+});
