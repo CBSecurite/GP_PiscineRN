@@ -1,0 +1,9 @@
+const Key = () => {
+  const key1 = 'E1FEF13D-01DE-468A-84FE-919118A7BB73';
+  const key2 = 'C993F637-16FF-4231-A07B-4D1700DE9DFA';
+  const key3 = '0FDA3523-25C1-4411-84DF-0B4EC4806863';
+  const key4 = 'C993F637-16FF-4231-A07B-4D1700DE9DFA';
+  const key5 = '82AB194C-6355-4CD6-AD29-090B24596FF1';
+  return key5;
+}
+export default Key;
